@@ -1,8 +1,16 @@
-import React from "react"
+import React,{useState} from "react"
 import DataFetcher from "./MeCycle"
 function App() {
+
+    const [id, setId] = useState(1) 
+
     return(
-        <DataFetcher/>
+        
+        <>
+        <DataFetcher id={id}/>
+        <button onClick={() => setId(id + 1)}>Change Id</button>
+        </>
+
     );
 }
 

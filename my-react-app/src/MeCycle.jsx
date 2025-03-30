@@ -18,6 +18,13 @@ class DataFetcher extends Component {
         },2000);
     }
 
+    componentDidUpdate(prevProps){
+        if (prevProps.id !== this.props.id){
+            console.log("ID prop changed! Fetch new Data...");
+            
+        }
+    }
+
    render(){
     return(
         <div>
@@ -28,4 +35,4 @@ class DataFetcher extends Component {
    }
 }
 
-export default DataFetcher
+export default DataFetcher;
