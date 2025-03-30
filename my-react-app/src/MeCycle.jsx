@@ -25,6 +25,12 @@ class DataFetcher extends Component {
         }
     }
 
+    // componentWillUnmount(){
+    //     console.log("Component is being removed");
+    //     clearInterval(this.timer)
+        
+    // }
+
    render(){
     return(
         <div>
